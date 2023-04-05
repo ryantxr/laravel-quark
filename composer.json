@@ -1,0 +1,24 @@
+{
+    "name": "ryantxr/laravel-quark",
+    "description": "A laravel package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ryantxr\\LaravelQuark\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support":"*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ryantxr\\LaravelQuark\\ServiceProvider"
+            ],
+            "aliases": {
+                "Quark": "Ryantxr\\LaravelQuark\\Facade"
+            }
+        }
+    }
+}
